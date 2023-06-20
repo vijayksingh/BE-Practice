@@ -1,12 +1,16 @@
-export interface Book {
-  id: number;
-  title: string;
-  author: string;
-  genre: string;
-  publishedYear: number;
-  description: string;
-  price: number;
-}
+import { z } from "zod"
+
+export const bookSchema = z.object({
+  id: z.number().optional(),
+  title: z.string().nonempty(),
+  author: z.string().nonempty(),
+  genre: z.string().optional(),
+  publishedYear: z.number().optional(),
+  description: z.string().optional(),
+  price: z.number().positive(),
+})
+
+export type Book = z.infer<typeof bookSchema> 
 
 export const booksData: Book[] = [
   {

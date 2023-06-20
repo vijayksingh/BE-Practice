@@ -6,7 +6,7 @@
 
 - Server : Fastify
 - Database : PostgreSQL (pg) (Database interact) (SQL)
-- ORM : ?? (Object Relational Mapping) (Wont use) 
+- ORM : ?? DRIZZLE / PRISMA 
 - fastify-postgres (Database interact) (SQL)
 
 

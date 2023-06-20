@@ -1,6 +1,8 @@
 // Importing Fastify and its types
-import Fastify, { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
+import Fastify from "fastify";
 import { booksRoutes } from "./modules/books/books.route";
+import { migrate } from "drizzle-orm/node-postgres/migrator";
+import { db } from "./db";
 
 // Creating a Fastify instance with a logger that uses the "pino-pretty" transport
 const fastify = Fastify({
@@ -11,6 +13,7 @@ const fastify = Fastify({
   },
 });
 
+
 // Registering the booksRoutes function with a prefix of "/api/users"
 fastify.register(booksRoutes, { prefix: "/api/books" });
 
@@ -19,6 +22,10 @@ async function main() {
   await fastify.listen({
     port: 3000, // Listening on port 3000
     host: "0.0.0.0", // Listening on all available network interfaces
+  });
+
+  await migrate( db , {
+    migrationsFolder: "./migrations",
   });
 }
 
