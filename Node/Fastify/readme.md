@@ -7,7 +7,7 @@
 - Initially i'll be focusing on picking up various toold and technolgies which are most prevailing in the year 2023 in Node.js ecosystem. I'll try to incorporate all the libs which are heavily being used in a production grade Backend Application. 
 
 **Process and Methodologies**
-- Second once i've covered the tools part i'll start working on refining the process in terms of first setting up a CI/CD pipeline. Putting the server onto a VPN along with some kind of cache and stuff. 
+- Once i've covered the tools part i'll start working on refining the process in terms of first setting up a CI/CD pipeline. Putting the server onto a VPN along with some kind of cache and stuff. 
 
 ## How to go about it.
 The task list below will act like a checkpoint in terms of progress. And i'll try to keep each checkpoint as atomic as possible. And each checkpoint will have a corresponding branch associated with it. 
