@@ -30,6 +30,7 @@ logs
 
 # Dependency directories
 node_modules/
+migrations/
 
 # Build output
 /dist

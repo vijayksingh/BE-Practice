@@ -24,7 +24,7 @@ async function main() {
     host: "0.0.0.0", // Listening on all available network interfaces
   });
 
-  await migrate( db , {
+  await migrate(db , {
     migrationsFolder: "./migrations",
   });
 }

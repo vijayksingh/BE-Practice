@@ -16,10 +16,10 @@ The task list below will act like a checkpoint in terms of progress. And i'll tr
 > The list here is tentative and might change if i find anything interesting
 
 Learning Tools
-- [ ] Learn to make simple CRUD operations (Without DB)
-- [ ] Add validation with zod
+- [x] Learn to make simple CRUD operations (Without DB)
+- [x] Add validation with zod
+- [x] Introduce an ORM layer (Prisma / Drizzle) 
 - [ ] Learn to make simple CRUD with persistance in DB (Postgres)
-- [ ] Introduce an ORM layer (Prisma / Drizzle) 
 - [ ] Add unit test and API test ()
 
 Learning Infrastructure
