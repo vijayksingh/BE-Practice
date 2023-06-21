@@ -3,6 +3,7 @@ import Fastify from "fastify";
 import { booksRoutes } from "./modules/books/books.route";
 import { migrate } from "drizzle-orm/node-postgres/migrator";
 import { db } from "./db";
+import { StudentRoutes } from "./modules/students/student.route";
 
 // Creating a Fastify instance with a logger that uses the "pino-pretty" transport
 const fastify = Fastify({
@@ -16,6 +17,7 @@ const fastify = Fastify({
 
 // Registering the booksRoutes function with a prefix of "/api/users"
 fastify.register(booksRoutes, { prefix: "/api/books" });
+fastify.register(StudentRoutes, { prefix: "/api/students" });
 
 // Defining the main function that starts the server
 async function main() {

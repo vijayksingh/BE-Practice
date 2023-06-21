@@ -14,6 +14,7 @@ export const addBook = (book: Book) => {
     throw new Error("This book already exist");
   }
 
+  // Instead of array push this to databse
   booksData.push({ ...validatedBook, id: booksData.length });
 };
 
