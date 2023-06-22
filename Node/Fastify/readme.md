@@ -19,7 +19,8 @@ Learning Tools
 - [x] Learn to make simple CRUD operations (Without DB)
 - [x] Add validation with zod
 - [x] Introduce an ORM layer (Prisma / Drizzle) 
-- [ ] Learn to make simple CRUD with persistance in DB (Postgres)
+- [x] Learn to make simple CRUD with persistance in DB (Postgres)
+- [ ] Add authentication with JWT
 - [ ] Add unit test and API test ()
 
 Learning Infrastructure
@@ -29,6 +30,14 @@ Learning Infrastructure
 - [ ] Add your own DB Instance.
 - [ ] Add a Cache 
 - [ ] Add support for monitoring and logging. 
+
+Optional Stuff
+- [ ] Add support for file upload
+- [ ] Add support for file download
+- [ ] Add support for sending emails
+- [ ] Add support for sending SMS
+- [ ] Add support for sending push notifications
+- [ ] Add authorization with RBAC
 
 
 
@@ -78,3 +87,5 @@ events.forEach((event) => {
   });
 });
 ```
+
+

@@ -40,3 +40,11 @@ export const loans = pgTable("loans", {
   createdAt: timestamp("createdAt").notNull().defaultNow(),
   updatedAt: timestamp("createdAt").notNull().defaultNow(),
 });
+
+export const users = pgTable("users", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  username: varchar("username", { length: 256 }).notNull(),
+  password: varchar("password", { length: 256 }).notNull(),
+  createdAt: timestamp("createdAt").notNull().defaultNow(),
+  updatedAt: timestamp("createdAt").notNull().defaultNow(),
+});
