@@ -54,7 +54,7 @@ migrations/
 # OS generated files
 Thumbs.db
 
-# Gitignore for Golang Based Projects
+######################################## Gitignore for Golang Based Projects ####################################
 # Compiled binary files
 *.exe
 *.dll
@@ -74,7 +74,7 @@ Thumbs.db
 .DS_Store
 
 
-# Gitignore for Pythong Based Projects
+####################################### Gitignore for Pythong Based Projects ################################
 # Byte-compiled / optimized files
 *.py[cod]
 __pycache__/
@@ -94,4 +94,36 @@ env.bak/
 # OS generated files
 Thumbs.db
 .DS_Store
+
+
+############################################# OCaml based Projects #######################################
+# Dune build artifacts
+_build/
+
+# Installed packages
+/_opam/
+
+# Editor and IDE files
+*.swp
+*~
+
+# Compiled files
+*.cmi
+*.cmo
+*.cmx
+*.o
+
+# Generated documentation
+/_doc/
+
+# Dependency lock files
+opam.lock
+*.install
+
+# Local development environment
+.dune
+
+# Project-specific configuration files (adjust as needed)
+config.ml
+dune-project
 
