@@ -53,3 +53,11 @@ let describe_list list =
 
 let result = describe_list []
 let single_result = describe_list [1]
+
+(* ADT Abstract Data Types *)
+
+type point = { x: int; y: int }
+type circle = { center: point; radius: float}
+
+let get_center circle = circle.center
+
